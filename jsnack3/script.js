@@ -9,3 +9,23 @@
     // 2.1 Valora sommma iniziale = 0
     // 2.2 Sommare nel valore somma i valori dell'array
 
+
+    const listNum = [];
+ 
+
+    for (let i = 0; i < 10; i++) {
+        
+        listNum[i] = parseInt(prompt("Inserisci un numero"));
+        
+    }
+
+   let somma = 0;
+
+   for (let i = 0; i < listNum.length; i++) {
+       
+        somma += listNum[i];
+       
+   }
+
+    console.log(listNum);
+    console.log(somma);
