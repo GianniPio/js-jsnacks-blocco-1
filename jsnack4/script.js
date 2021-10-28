@@ -13,3 +13,40 @@
 // 4. Comunico se può partecipare o no -> if
 //  4.1 Se la variabile bolleana è vera, allora può partecipare
 //  4.2 Altrimenti no
+
+// Lista degli invitati
+// generare un array contenente una lista di nomi
+
+const listParty = ["Gatsby", "Gianni", "Loris", "Simone", "Adriano"];
+
+console.log(listParty);
+
+
+// l'utente scrive il nome
+
+const userName = prompt("Inserire il tuo nome");
+
+// variabile per capire se il nome c'è
+let trovato = false;
+
+// inserire un for e un if che controlla che il nome dell'utente è dentro la lista
+
+for (let i = 0; i < listParty.length; i++) {
+
+    // creo variabile che prende il valore i-esimo della lista
+    var element = listParty[i];
+    
+    // se il nome dell'utente è uguale ad un nome della lista la variabile "trovato" diventa true
+    if (userName == element) {
+        trovato = true;
+    }
+}
+
+    
+    if (trovato == true) {
+        // se la variaibile è true stampa, l'utente può entrare
+        console.log (`Perfetto ${userName}, sei il benvenuto alla festa del Grande Gatsby`);
+    } else {
+        // altrimenti non è nella lista
+        console.log("Non puoi partecipare alla festa del Grande Gatsby");
+    }
