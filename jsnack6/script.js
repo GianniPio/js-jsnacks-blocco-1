@@ -6,7 +6,7 @@
 
 //2. Controllare che nell'array non ci siamo numeri doppioni
     // 2.1 Tramite variabile controllare che non si siano doppioni ->
-    // 2.2 Se ci sono doppioni la variabile diventa vera, se è falsa salva il numero nell'array -> for/if
+    // 2.2 Se ci sono doppioni la variabile diventa vera, se è falsa salva il numero -> for/if
 
 const arrayNum = [];
 
@@ -16,7 +16,7 @@ while (arrayNum.length < 50) {
 
     let duplicate = false;
 
-    for (let i = 0; i < arrayNum.length; i++) 
+    for (let i = 0; i < arrayNum.length; i++) {
         
         if (arrayNum[i] === number) {
 
